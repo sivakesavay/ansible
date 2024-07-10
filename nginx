@@ -1,0 +1,14 @@
+- name: Install and start Nginx
+  hosts: web
+  become: yes  # This ensures the tasks are run with sudo privileges
+  tasks:
+    - name: Install Nginx
+      yum:  # Use 'apt' if you are using Ubuntu/Debian
+        name: nginx
+        state: present
+
+    - name: Start Nginx service
+      systemd:
+        name: nginx
+        state: started
+        enabled: yes  # Ensures Nginx starts on boot
