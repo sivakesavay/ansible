@@ -1,5 +1,5 @@
-- name: ping server
+- name: ping the server
   hostes: web # Inventory (List of hosts)
   tasks: # list of tasks/modules/collections
-  - name: ping server
+  - name: pinging the server
     ansible.builtin.ping:
