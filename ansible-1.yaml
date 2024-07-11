@@ -1,5 +1,5 @@
 - name: variables
-  hosts: localhost
+  hosts: web
   vars: 
     hostel: luckky PG/Hostel
     duration: 12months
