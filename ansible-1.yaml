@@ -7,5 +7,11 @@
     whom: friends
   tasks:
   - name: print information
+    vars:
+      address: vinshu pg
     ansible.builtin.debug:
-     msg: "I came to hyderabad and staying in {{address}} with {{whom}} in {{hostel}} for {{duration}}"
+     msg: "I came to bangalore and staying in {{address}} with {{whom}} in {{hostel}} for {{duration}}"
+  
+  - name: another task
+    ansible.builtin.debug:
+      msg: I came to hyd and staying in {{address}} with {{whom}} in {{hostel}} for {{duration}}"
