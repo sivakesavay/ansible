@@ -9,6 +9,7 @@
   - name: print information
     vars:
       address: vinshu pg
+      whom: family
     ansible.builtin.debug:
      msg: "I came to bangalore and staying in {{address}} with {{whom}} in {{hostel}} for {{duration}}"
   
