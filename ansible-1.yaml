@@ -1,5 +1,5 @@
 - name: variables
-  host: localhost
+  host: web
   vars: 
     hostel: luckky
     duration: 12months
