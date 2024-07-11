@@ -8,4 +8,4 @@
   tasks:
   - name: print information
     ansible.builtin.debug:
-     msg: "I cam to hyderabad and staying in {{address}} with {{whom}} in {{hostel}} for {{duration}}"
+     msg: "I came to hyderabad and staying in {{address}} with {{whom}} in {{hostel}} for {{duration}}"
