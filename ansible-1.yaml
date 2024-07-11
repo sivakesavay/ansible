@@ -1,0 +1,11 @@
+- name: variables
+  host: localhost
+  vars: 
+    hostel: luckky
+    duration: 12months
+    address: nacharam
+    whom: friends
+  tasks:
+  - name: print information
+    ansible.builtin.debug:
+    msg: "I am staying in {{address}} with {{whom}} in {{hostel}} for {{duration}}"
