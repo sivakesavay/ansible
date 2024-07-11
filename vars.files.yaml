@@ -1,6 +1,8 @@
 - name: connecting varibles from files
   hosts: localhost
+  vars_files: 
+    - vars.yml
   tasks:
-  - name: print information
-    ansible.builtin.debug:
-      msg: "I came to bangalore and staying in {{address}} with {{whom}} in {{hostel}} for {{duration}}"
+    - name: print information
+      ansible.builtin.debug:
+        msg: "I came to bangalore and staying in {{address}} with {{whom}} in {{hostel}} for {{duration}}"
