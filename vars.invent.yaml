@@ -1,5 +1,5 @@
 - name: connecting variables from inventory
-  hosts: web
+  hosts: localhost
   tasks:
     - name: print information
       ansible.builtin.debug:
