@@ -3,4 +3,4 @@
   tasks:
   - name: print information
     ansible.builtin.debug:
-      msg: "I am strting at {{1}} to my {{2}}"
+      msg: "I am strting at {{a}} to my {{b}}"
