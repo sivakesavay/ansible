@@ -1,0 +1,6 @@
+- name: connecting variables from inventory
+  hosts: web
+  tasks:
+    - name: print information
+      ansible.builtin.debug:
+        msg: "I came to bangalore and staying in {{address}} with {{whom}} in {{hostel}} for {{duration}}"
