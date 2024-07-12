@@ -1,5 +1,5 @@
 - name: connecting variables from prompt
-  hosts: localhost
+  hosts: web
   vars_prompt:
     - name: username
       prompt: enter username here
