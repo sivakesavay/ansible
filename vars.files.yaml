@@ -1,5 +1,5 @@
 - name: connecting varibles from files
-  hosts: web
+  hosts: localhost
   vars_files: 
     - vars.yml
   tasks:
