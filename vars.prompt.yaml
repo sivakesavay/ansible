@@ -6,7 +6,7 @@
       private: false
 
     - name: password
-      prompt: enter passoword here
+      prompt: enter password here
       private: false
   tasks:
     - name: print information
