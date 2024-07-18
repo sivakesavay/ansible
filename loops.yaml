@@ -1,0 +1,10 @@
+- name: loops
+  hosts: localhost
+  tasks:
+    - name: prinit list
+      ansibl,builtin.debug: 
+        msg: "we are going to install"
+      loops:
+        - linux
+        - git
+        - ansible
