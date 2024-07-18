@@ -1,0 +1,25 @@
+- name: default value
+  hosts: localhost
+  tasks:
+  - name: print default value
+    ansible.builtin.debug:
+      msg: "tata {{product | default('cars') }}"
+
+
+- name: words to upper case
+  hosts: localhost
+  vars:
+    fruit: "mango"
+  tasks:
+    - name: changing the lower case into upper case
+      asnible.builtin.debug:
+        msg: "{{fruit | upper}}"
+
+- name: words to lower case
+  hosts: localhost
+  vars:
+    fruit: "mango"
+  tasks:
+    - name: changing upper case to lower case
+      ansible.builtin,debug:
+        msg: "{{fruit | lower}}""
