@@ -41,4 +41,4 @@
   tasks:
     - name: min number
       ansible.builtin.debug:
-        msg: min: "{{ numbers | min }}, max: {{ numbers | max }}"
+        msg: min: "{{ numbers | min }}", max: "{{ numbers | max }}"
