@@ -4,7 +4,7 @@
     - name: print list
       ansibl.builtin.debug: 
         msg: "we are going to install below items {{item}}"
-      loops:
+      loop:
         - linux
         - git
         - ansible
