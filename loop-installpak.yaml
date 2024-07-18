@@ -3,8 +3,8 @@
   become: yes
   tasks:
     - name: install list below
-      assible.builtin.dnf:
-        name: {{ item }}
+      ansible.builtin.dnf:
+        name: "{{ item }}"
         state: latest
       loop:
         - mysql
