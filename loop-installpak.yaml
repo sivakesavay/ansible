@@ -1,4 +1,4 @@
-- name: insall packages
+- name: install packages
   hosts: web
   become: yes
   tasks:
