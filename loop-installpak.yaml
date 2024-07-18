@@ -1,0 +1,11 @@
+- name: insall packages
+  hosts: web
+  become: yes
+  tasks:
+    - name: install list below
+      assible.builtin.dnf:
+        name: {{ item }}
+        state: latest
+      loop:
+        - mysql
+        - nginx
