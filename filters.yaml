@@ -12,7 +12,7 @@
     fruit: "mango"
   tasks:
     - name: changing the lower case into upper case
-      asnible.builtin.debug:
+      ansible.builtin.debug:
         msg: "{{fruit | upper}}"
 
 - name: words to lower case
@@ -21,5 +21,5 @@
     fruit: "mango"
   tasks:
     - name: changing upper case to lower case
-      ansible.builtin,debug:
-        msg: "{{fruit | lower}}""
+      ansible.builtin.debug:
+        msg: "{{fruit | lower}}"
