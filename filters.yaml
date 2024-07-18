@@ -40,5 +40,5 @@
     numbers: [989, 547,658,415,55]
   tasks:
     - name: min number
-      ansible.builtin,debug:
+      ansible.builtin.debug:
         msg: "{{ numbers | min }}"
