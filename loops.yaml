@@ -1,9 +1,9 @@
 - name: loops
   hosts: localhost
   tasks:
-    - name: prinit list
+    - name: print list
       ansibl,builtin.debug: 
-        msg: "we are going to install"
+        msg: "we are going to install below items {{item}}"
       loops:
         - linux
         - git
