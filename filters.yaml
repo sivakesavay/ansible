@@ -24,7 +24,7 @@
       ansible.builtin.debug:
         msg: "{{fruit | lower}}"
 
-        
+
 - name: removing duplicates
   hosts: localhost
   vars:
@@ -34,3 +34,11 @@
       ansible.builtin.debug:
         msg: "{{ numbers | unique }}"
 
+- name: minimum number
+  hosts: localhost
+  vars:
+    numbers: [989, 547,658,415,55]
+  tasks:
+    - name: min number
+      ansible.builtin,debug:
+        msg: "{{ numbers | min }}"
