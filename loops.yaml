@@ -2,9 +2,10 @@
   hosts: localhost
   tasks:
     - name: print list
-      ansibl.builtin.debug: 
-        msg: "we are going to install below items {{item}}"
+      ansible.builtin.debug: 
+        msg: "we are going to install below items {{ item }}"
       loop:
         - linux
         - git
         - ansible
+
